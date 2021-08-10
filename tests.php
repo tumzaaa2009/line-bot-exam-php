@@ -1,5 +1,5 @@
 <?php
- 
+  http_response_code(200);
  $LINEData = file_get_contents('php://input');
  $jsonData = json_decode($LINEData,true);
  $replyToken = $jsonData["events"][0]["replyToken"];
@@ -42,5 +42,5 @@ return $result;
  
  $results = sendMessage($encodeJson,$lineData);
  echo $results;
- http_response_code(200);
+
 ?>
