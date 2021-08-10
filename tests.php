@@ -32,7 +32,7 @@ return $result;
   "template": {
       "type": "buttons",
       "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
-      "imageAspectRatio": "rectangle",
+      "imageAspectRatio": "square",
       "imageSize": "cover",
       "imageBackgroundColor": "#FFFFFF",
       "title": "Menu",
