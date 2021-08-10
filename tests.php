@@ -36,7 +36,7 @@ return $result;
       "imageSize": "cover",
       "imageBackgroundColor": "#FFFFFF",
       "title": "Menu",
-      "text": "Please select",
+      "text": "รายการ",
       "defaultAction": {
           "type": "uri",
           "label": "View detail",
