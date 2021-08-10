@@ -20,18 +20,19 @@
    curl_close($ch);
 return $result;
 }
- 
-//  $getUser = $mysql->query("SELECT * FROM `test` WHERE `question`='$text'");
-//  $getuserNum = $getUser->num_rows;
- 
- 
+ if($text=="จ้า"){
      $message = '{
      "type" : "text",
      "text" : "ไม่มีข้อมูลที่ต้องการ"
      }';
-     $replymessage = json_decode($message);
-//ค่าที่ส่งไป
- 
+ }else {
+       $message = '{
+     "type" : "text",
+     "text" : "อิอิอิอิอิอิอิ"
+     }';
+ }
+
+ $replymessage = json_decode($message);//ค่าที่ส่งไป
  $lineData['URL'] = "https://api.line.me/v2/bot/message/reply";
  $lineData['AccessToken'] = "4+wlVCk7j87dsSACquSCsDRO/jDtWmE+zus83z1OarXrxvAQEUUIuVuTL5V0f0zSWWH0LB5kkeWr23DWuUMDqA40QimgrSSr1ljJP4+SHgsF+mQepYcSyIzyTMMYFdhN3txmcZBeaHXX8bt6yZMH5AdB04t89/1O/w1cDnyilFU=";
  $replyJson["replyToken"] = $replyToken;
