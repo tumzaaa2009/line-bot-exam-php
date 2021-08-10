@@ -27,8 +27,8 @@ return $result;
      }';
  }else {
        $message = '{
-     "type" : "text",
-     "text" : "อิอิอิอิอิอิอิ"
+     "type" : "url",
+     "text" : "www.rh4.moph.go.th"
      }';
  }
 
