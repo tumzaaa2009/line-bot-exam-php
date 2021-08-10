@@ -29,8 +29,6 @@ return $result;
        $message = '{
   "type": "template",
   "altText": "This is a buttons template",
-   "type" : "text",
-   "text" : "ไม่มีข้อมูลที่ต้องการ",
   "template": {
       "type": "buttons",
       "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
