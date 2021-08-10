@@ -40,13 +40,13 @@ return $result;
       "defaultAction": {
           "type": "uri",
           "label": "View detail",
-          "uri": "http://example.com/page/123"
+          "uri": "https://rh4.moph.go.th/fullCalrendarV4/index.php"
       },
       "actions": [
           {
-            "type": "postback",
-            "label": "Buy",
-            "data": "action=buy&itemid=123"
+            "type": "uri",
+            "label": "Basdasdasd",
+              "uri": "https://rh4.moph.go.th/fullCalrendarV4/index.php"
           },
           {
             "type": "postback",
