@@ -31,7 +31,7 @@ return $result;
   "altText": "This is a buttons template",
   "template": {
       "type": "buttons",
-      "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
+      "thumbnailImageUrl": "https://rh4.moph.go.th/icon/logo2.png",
       "imageAspectRatio": "rectangle",
       "imageSize": "cover",
       "imageBackgroundColor": "#FFFFFF",
