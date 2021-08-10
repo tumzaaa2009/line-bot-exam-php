@@ -26,23 +26,13 @@ return $result;
      "text" : "ไม่มีข้อมูลที่ต้องการ"
      }';
  }else {
-       $message = '"quickReply": {
-  "items": [
-    {
-      "type": "action",
-      "action": {
-        "type": "cameraRoll",
-        "label": "Send photo"
-      }
-    },
-    {
-      "type": "action",
-      "action": {
-        "type": "camera",
-        "label": "Open camera"
-      }
+       $message = '{
+    "type": "text",
+    "text": "Hello, I am Cony!!",
+    "sender": {
+        "name": "Cony",
+        "iconUrl": "https://line.me/conyprof"
     }
-  ]
 }';
  }
 
