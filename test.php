@@ -10,6 +10,12 @@
 	$userId = $deCode['events'][0]['source']['userId'];
 	$text = $deCode['events'][0]['message']['text']; //ผู้ใช้พิมพ์เข้ามา
 
+	if($text=="จ้า"){
+	$messages['messages'][0] = getFormatTextMessage("จ้าหน้ามึงดิ");
+	}else{
+	$messages['messages'][0] = getFormatTextMessage("เอ้ย ถามอะไรก็ตอบได้");
+	}
+
 	$messages = [];
 	$messages['replyToken'] = $replyToken;
 	$messages['messages'][0] = getFormatTextMessage("เอ้ย ถามอะไรก็ตอบได้");
