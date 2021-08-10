@@ -61,47 +61,6 @@ return $result;
       ]
   }
 }';
- }else if ($text =="เช็ควัน"){
-     global $db_r4;
-        define("DB_HOST_local","203.157.102.84");
-        define("DB_PORT_local","3306");
-        define("DB_NAME_local","rhso4_db_2");
-        define("DB_USERNAME_local","root");
-        define("DB_PASSWORD_local","kethealth4");
-        define("DB_ISO_local","utf8");
-        
-        // define("DB_HOST_local","127.0.0.1");
-        // define("DB_PORT_local","3306");
-        // define("DB_NAME_local","r4");
-        // define("DB_USERNAME_local","root");
-        // define("DB_PASSWORD_local","1");
-        // define("DB_ISO_local","utf8");
-        
-        try {
-                $db_r4 = new PDO("mysql:host=".DB_HOST_local.";port=".DB_PORT_local.";dbname=".DB_NAME_local.";", DB_USERNAME_local, DB_PASSWORD_local);
-                $db_r4->prepare("SET NAMES ".DB_ISO_local."");
-                $db_r4->query("SET NAMES ".DB_ISO_local."");
-        } catch(PDOException $e) {
-        echo $e->getMessage();
-        }
-
-
-    $selectBooking ="SELECT * FROM bookingR4" ; 
-    $rs = $db_r4->prepare($selectBooking);
-    $rs->execute();
-
-    $json = array();
-    $i = 0; 
-    foreach ($rs as $row  ) {
-    $rowStartDate = $row['dateBooking'].''.$row['startDate'];
-    $rowEndDate = $row['dateBooking'].''.$row['endDate'];
-    $message[$i] = '{
-     "type" : "text",
-     "text" :$rowStartDate
-     }';
-    $i++;
-    }
- 
  }
 
 
