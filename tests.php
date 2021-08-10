@@ -40,7 +40,7 @@ return $result;
       "defaultAction": {
           "type": "uri",
           "label": "View detail",
-          "uri": "https://rh4.moph.go.th/fullCalrendarV4/index.php"
+          "uri": "http://example.com/page/123"
       },
       "actions": [
           {
