@@ -25,7 +25,7 @@ return $result;
      "type" : "text",
      "text" : "ไม่มีข้อมูลที่ต้องการ"
      }';
- }else if($text=="จองประชุม"){
+ }else if($text=="จองห้องประชุม"){
        $message = '{
   "type": "template",
   "altText": "This is a buttons template",
