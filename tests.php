@@ -26,45 +26,23 @@ return $result;
      "text" : "ไม่มีข้อมูลที่ต้องการ"
      }';
  }else {
-       $message = '{
-  "type": "bubble",
-  "header": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "Header text"
+       $message = '"quickReply": {
+  "items": [
+    {
+      "type": "action",
+      "action": {
+        "type": "cameraRoll",
+        "label": "Send photo"
       }
-    ]
-  },
-  "hero": {
-    "type": "image",
-    "url": "https://example.com/flex/images/image.jpg"
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "Body text"
+    },
+    {
+      "type": "action",
+      "action": {
+        "type": "camera",
+        "label": "Open camera"
       }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "Footer text"
-      }
-    ]
-  },
-  "styles": {
-    "comment": "See the example of a bubble style object"
-  }
+    }
+  ]
 }';
  }
 
