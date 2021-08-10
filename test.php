@@ -1,4 +1,6 @@
 <?php 
+	/*Return HTTP Request 200*/
+	http_response_code(200);
 	/*Get Data From POST Http Request*/
 	$datas = file_get_contents('php://input');
 	/*Decode Json From LINE Data Body*/
@@ -21,8 +23,7 @@
 
   	$results = sentMessage($encodeJson,$LINEDatas);
 
-	/*Return HTTP Request 200*/
-	http_response_code(200);
+
 
 	function getFormatTextMessage($text)
 	{
