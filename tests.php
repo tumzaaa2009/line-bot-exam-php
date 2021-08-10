@@ -27,9 +27,21 @@ return $result;
      }';
  }else {
        $message = '{
-     "type" : "url",
-     "linkUri" : "www.rh4.moph.go.th"
-     }';
+    "type": "text",
+    "text": "$ LINE emoji $",
+    "emojis": [
+      {
+        "index": 0,
+        "productId": "5ac1bfd5040ab15980c9b435",
+        "emojiId": "001"
+      },
+      {
+        "index": 13,
+        "productId": "5ac1bfd5040ab15980c9b435",
+        "emojiId": "002"
+      }
+    ]
+}';
  }
 
  $replymessage = json_decode($message);//ค่าที่ส่งไป
