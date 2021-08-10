@@ -27,20 +27,15 @@ return $result;
      }';
  }else {
        $message = '{
-    "type": "text",
-    "text": "$ LINE emoji $",
-    "emojis": [
-      {
-        "index": 0,
-        "productId": "5ac1bfd5040ab15980c9b435",
-        "emojiId": "001"
-      },
-      {
-        "index": 13,
-        "productId": "5ac1bfd5040ab15980c9b435",
-        "emojiId": "002"
-      }
-    ]
+   "type":"uri",
+   "label":"https://example.com/",
+   "linkUri":"https://example.com/",
+   "area":{
+      "x":0,
+      "y":0,
+      "width":520,
+      "height":1040
+   }
 }';
  }
 
