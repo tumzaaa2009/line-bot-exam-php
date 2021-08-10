@@ -27,39 +27,15 @@ return $result;
      }';
  }else {
        $message = '{
-  "type": "template",
-  "altText": "This is a buttons template",
-  "template": {
-      "type": "buttons",
-      "thumbnailImageUrl": "https://rh4.moph.go.th/icon/logo2.png",
-      "imageAspectRatio": "rectangle",
-      "imageSize": "cover",
-      "imageBackgroundColor": "#FFFFFF",
-      "title": "Menu",
-      "text": "Please select",
-      "defaultAction": {
-          "type": "uri",
-          "label": "View detail",
-          "uri": "http://example.com/page/123"
-      },
-      "actions": [
-          {
-            "type": "postback",
-            "label": "Buy",
-            "data": "action=buy&itemid=123"
-          },
-          {
-            "type": "postback",
-            "label": "Add to cart",
-            "data": "action=add&itemid=123"
-          },
-          {
-            "type": "uri",
-            "label": "View detail",
-            "uri": "http://example.com/page/123"
-          }
-      ]
-  }
+   "type":"uri",
+   "label":"https://example.com/",
+   "linkUri":"https://example.com/",
+   "area":{
+      "x":0,
+      "y":0,
+      "width":520,
+      "height":1040
+   }
 }';
  }
 
