@@ -29,7 +29,7 @@
 	{
 		$datas = [];
 		$datas['type'] = 'text';
-		$datas['text'] = "ข้อความที่ดักเข้ามา";
+		$datas['text'] = $replyToken;
 
 		return $datas;
 	}
