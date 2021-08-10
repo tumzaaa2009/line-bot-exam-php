@@ -64,6 +64,23 @@ return $result;
       ]
   }
 }';
+ }else if ($text =="เช็ควัน"){
+    $selectBooking ="SELECT * FROM bookingR4" ; 
+    $rs = $db_r4->prepare($selectBooking);
+    $rs->execute();
+
+    $json = array();
+    $i = 0; 
+    foreach ($rs as $row  ) {
+    $rowStartDate = $row['dateBooking'].''.$row['startDate'];
+    $rowEndDate = $row['dateBooking'].''.$row['endDate'];
+    $message[$i] = '{
+     "type" : "text",
+     "text" :$rowStartDate
+     }';
+    $i++;
+    }
+ 
  }
 
 
