@@ -14,7 +14,7 @@
 
 	$messages = [];
 	$messages['replyToken'] = $replyToken;
-	$messages['messages'][0] = getFormatTextMessage("กกกก");
+	$messages['messages'][0] = getFormatTextMessage("ว่าไง");
 
 	$encodeJson = json_encode($messages);
 
