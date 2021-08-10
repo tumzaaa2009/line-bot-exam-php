@@ -30,7 +30,7 @@ return $result;
      "text" : "ไม่มีข้อมูลที่ต้องการ"
      }';
  }else if ($text =="จองห้อง"){
- {
+   $message = '{
   "type": "template",
   "altText": "this is a image carousel template",
   "template": {
@@ -62,7 +62,7 @@ return $result;
           }
       ]
   }
-}
+}';
  }
 
 
