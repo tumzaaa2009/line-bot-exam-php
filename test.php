@@ -21,9 +21,7 @@
 
   	$results = sentMessage($encodeJson,$LINEDatas);
 
-	/*Return HTTP Request 200*/
-	http_response_code(200);
-
+	
 	function getFormatTextMessage($text)
 	{
 		$datas = [];
@@ -73,4 +71,7 @@
 
 		return $datasReturn;
 	}
+/*Return HTTP Request 200*/
+	http_response_code(200);
+
 ?>
