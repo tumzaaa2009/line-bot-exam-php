@@ -29,7 +29,7 @@
 	{
 		$datas = [];
 		$datas['type'] = 'text';
-		$datas['text'] = "บ้าบออ";
+		$datas['text'] = "ข้อความที่ดักเข้ามา";
 
 		return $datas;
 	}
