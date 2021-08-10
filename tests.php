@@ -36,29 +36,29 @@ return $result;
       "imageSize": "cover",
       "imageBackgroundColor": "#FFFFFF",
       "title": "Menu",
-      "text": "รายการ",
+      "text": "Please select",
       "defaultAction": {
           "type": "uri",
           "label": "View detail",
-          "uri": "https://rh4.moph.go.th/fullCalrendarV4/index.php"
+          "uri": "http://example.com/page/123"
       },
-       "actions": [
-           {
-            "type": "uri",
-             "label": "เช็ควันประชุม",
-            "uri": "https://rh4.moph.go.th/fullCalrendarV4/index.php"
+      "actions": [
+          {
+            "type": "postback",
+            "label": "Buy",
+            "data": "action=buy&itemid=123"
           },
           {
-             "type": "uri",
-             "label": "Add to cart",
+            "type": "postback",
+            "label": "Add to cart",
             "data": "action=add&itemid=123"
           },
-           {
+          {
             "type": "uri",
             "label": "View detail",
-           "uri": "http://example.com/page/123"
+            "uri": "http://example.com/page/123"
           }
-     ]
+      ]
   }
 }';
  }
