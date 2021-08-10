@@ -28,7 +28,7 @@ return $result;
  }else {
        $message = '{
      "type" : "url",
-     "text" : "www.rh4.moph.go.th"
+     "linkUri" : "www.rh4.moph.go.th"
      }';
  }
 
