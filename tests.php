@@ -27,14 +27,44 @@ return $result;
      }';
  }else {
        $message = '{
-  "type": "button",
-  "action": {
-    "type": "uri",
-    "label": "Tap me",
-    "uri": "https://example.com"
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Header text"
+      }
+    ]
   },
-  "style": "primary",
-  "color": "#0000ff"
+  "hero": {
+    "type": "image",
+    "url": "https://example.com/flex/images/image.jpg"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Body text"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Footer text"
+      }
+    ]
+  },
+  "styles": {
+    "comment": "See the example of a bubble style object"
+  }
 }';
  }
 
