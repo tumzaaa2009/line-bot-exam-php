@@ -27,16 +27,10 @@ return $result;
      }';
  }else {
        $message = '{
-   "type":"uri",
-   "label":"https://example.com/",
-   "linkUri":"https://example.com/",
-   "area":{
-      "x":0,
-      "y":0,
-      "width":520,
-      "height":1040
-   }
-}';
+            "type": "postback",
+            "label": "Add to cart",
+            "data": "action=add&itemid=123"
+          }';
  }
 
  $replymessage = json_decode($message);//ค่าที่ส่งไป
