@@ -43,15 +43,10 @@ return $result;
           "uri": "https://rh4.moph.go.th/fullCalrendarV4/index.php"
       },
       "actions": [
-          {
+            {
             "type": "uri",
-            "label": "Basdasdasd",
-              "uri": "https://rh4.moph.go.th/fullCalrendarV4/index.php"
-          },
-          {
-            "type": "postback",
-            "label": "Add to cart",
-            "data": "action=add&itemid=123"
+            "label": "asdasdas detail",
+            "uri": "http://example.com/page/123"
           },
           {
             "type": "uri",
