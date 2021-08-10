@@ -1,5 +1,5 @@
 <?php
-include './connect.php';
+ 
  $LINEData = file_get_contents('php://input');
  $jsonData = json_decode($LINEData,true);
  $replyToken = $jsonData["events"][0]["replyToken"];
@@ -63,25 +63,7 @@ return $result;
       ]
   }
 }';
- }else if ($text == "เช็ควัน"){
- $selectBooking ="SELECT * FROM bookingR4" ; 
- $rs = $db_r4->prepare($selectBooking);
- $rs->execute();
 
- 
-$i = 0; 
-foreach ($rs as $row  ) {
-$rowStartDate = $row['dateBooking'].''.$row['startDate'];
-$rowEndDate = $row['dateBooking'].''.$row['endDate'];
- $json[$i] = '{
-     "type" : "text",
-     "text" : $rowStartDate
-     }'//json
- }
- //foreach
-
- }
-//else if เช็ควัน
 
   $replymessage = json_decode($message);//ค่าที่ส่งไป
  $lineData['URL'] = "https://api.line.me/v2/bot/message/reply";
