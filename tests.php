@@ -40,13 +40,7 @@ return $result;
     ]
 }';
  }else if ($text =="จองห้อง"){
-     $message = '{
-  "type": "text",
-  "text": "Hello, World!",
-  "size": "xl",
-  "weight": "bold",
-  "color": "#0000ff"
-}';
+ 
  }
 
 
