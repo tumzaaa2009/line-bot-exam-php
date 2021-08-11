@@ -46,7 +46,7 @@ return $result;
   "size": "xl",
   "weight": "bold",
   "color": "#0000ff"
-}'
+}';
  }
 
 
