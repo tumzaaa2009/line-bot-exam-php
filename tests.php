@@ -29,34 +29,37 @@ return $result;
      }';
  }else if ($text =="จองห้อง"){
    $message = '{
+ {
   "type": "template",
-  "altText": "this is a image carousel template",
+  "altText": "This is a buttons template",
   "template": {
-      "type": "image_carousel",
-      "columns": [
+      "type": "buttons",
+      "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
+      "imageAspectRatio": "rectangle",
+      "imageSize": "cover",
+      "imageBackgroundColor": "#FFFFFF",
+      "title": "Menu",
+      "text": "Please select",
+      "defaultAction": {
+          "type": "uri",
+          "label": "View detail",
+          "uri": "http://example.com/page/123"
+      },
+      "actions": [
           {
-            "imageUrl": "https://example.com/bot/images/item1.jpg",
-            "action": {
-              "type": "postback",
-              "label": "Buy",
-              "data": "action=buy&itemid=111"
-            }
+            "type": "postback",
+            "label": "Buy",
+            "data": "action=buy&itemid=123"
           },
           {
-            "imageUrl": "https://example.com/bot/images/item2.jpg",
-            "action": {
-              "type": "message",
-              "label": "Yes",
-              "text": "yes"
-            }
+            "type": "postback",
+            "label": "Add to cart",
+            "data": "action=add&itemid=123"
           },
           {
-            "imageUrl": "https://example.com/bot/images/item3.jpg",
-            "action": {
-              "type": "uri",
-              "label": "View detail",
-              "uri": "http://example.com/page/222"
-            }
+            "type": "uri",
+            "label": "View detail",
+            "uri": "http://example.com/page/123"
           }
       ]
   }
