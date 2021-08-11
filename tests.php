@@ -24,8 +24,9 @@ return $result;
 }
  if($text=="จ้า"){
      $message = '{
-     "type" : "text",
-     "text" : "ไม่มีข้อมูลที่ต้องการ"
+     "type" : "uri",
+       "label": "View detail",
+       "uri": "http://example.com/page/123"
      }';
  }else if ($text =="จองห้อง"){
    $message = '{
