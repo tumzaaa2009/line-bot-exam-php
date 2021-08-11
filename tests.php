@@ -41,13 +41,10 @@ return $result;
 }';
  }else if ($text =="จองห้อง"){
      $message = '{
-  "type": "button",
-  "action": {
-    "type": "uri",
-    "label": "Tap me",
-    "uri": "https://example.com"
-  },
-  "style": "primary",
+  "type": "text",
+  "text": "Hello, World!",
+  "size": "xl",
+  "weight": "bold",
   "color": "#0000ff"
 }'
  }
