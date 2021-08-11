@@ -48,9 +48,9 @@ return $result;
       "text": "Are you sure?",
       "actions": [
           {
-            "type": "message",
-            "label": "Yes",
-            "text": "yes"
+            "type": "uri",
+            "label": "กดดดดด",
+            "uri": "http://example.com/page/123"
           },
           {
             "type": "message",
