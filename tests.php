@@ -40,7 +40,7 @@ return $result;
     ]
 }';
  }else if ($text =="จองห้อง"){
- 
+    $message = '{}';
  }
 
 
