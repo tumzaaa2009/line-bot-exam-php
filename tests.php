@@ -40,7 +40,7 @@ return $result;
     ]
 }';
  }else if ($text =="จองห้อง"){
-   $message = '{
+     $message = '{
   "type": "button",
   "action": {
     "type": "uri",
@@ -49,7 +49,7 @@ return $result;
   },
   "style": "primary",
   "color": "#0000ff"
-}';
+}'
  }
 
 
