@@ -50,7 +50,7 @@ return $result;
           {
             "type": "uri",
             "label": "กดดดดด",
-            "uri": "http://example.com/page/123"
+            "uri": "https://rh4.moph.go.th/fullCalrendarV4"
           },
           {
             "type": "message",
