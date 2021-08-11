@@ -24,10 +24,21 @@ return $result;
 }
  if($text=="จ้า"){
      $message = '{
-     "type" : "uri",
-       "label": "View detail",
-       "uri": "http://example.com/page/123"
-     }';
+    "type": "text",
+    "text": "$ LINE emoji $",
+    "emojis": [
+      {
+        "index": 0,
+        "productId": "5ac1bfd5040ab15980c9b435",
+        "emojiId": "001"
+      },
+      {
+        "index": 13,
+        "productId": "5ac1bfd5040ab15980c9b435",
+        "emojiId": "002"
+      }
+    ]
+}';
  }else if ($text =="จองห้อง"){
    $message = '{
   "type": "button",
