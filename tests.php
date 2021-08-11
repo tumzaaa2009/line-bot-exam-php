@@ -24,20 +24,34 @@ return $result;
 }
  if($text=="จ้า"){
      $message = '{
-    "type": "text",
-    "text": "$ LINE emoji $",
-    "emojis": [
-      {
-        "index": 0,
-        "productId": "5ac1bfd5040ab15980c9b435",
-        "emojiId": "001"
+  "destination": "xxxxxxxxxx",
+  "events": [
+    {
+      "replyToken": "0f3779fba3b349968c5d07db31eab56f",
+      "type": "message",
+      "mode": "active",
+      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+        "userId": "U4af4980629..."
       },
-      {
-        "index": 13,
-        "productId": "5ac1bfd5040ab15980c9b435",
-        "emojiId": "002"
+      "message": {
+        "id": "325708",
+        "type": "text",
+        "text": "Hello, world"
       }
-    ]
+    },
+    {
+      "replyToken": "8cf9239d56244f4197887e939187e19e",
+      "type": "follow",
+      "mode": "active",
+      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+        "userId": "U4af4980629..."
+      }
+    }
+  ]
 }';
  }else if ($text =="จองห้อง"){
     $message = '{
