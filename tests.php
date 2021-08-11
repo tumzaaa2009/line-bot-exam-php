@@ -41,10 +41,13 @@ return $result;
 }';
  }else if ($text =="จองห้อง"){
     $message = '{
-  "type": "text",
-  "text": "Hello, World!",
-  "size": "xl",
-  "weight": "bold",
+  "type": "button",
+  "action": {
+    "type": "uri",
+    "label": "Tap me",
+    "uri": "https://rh4.moph.go.th/"
+  },
+  "style": "primary",
   "color": "#0000ff"
 }';
  }
