@@ -30,30 +30,14 @@ return $result;
      }';
  }else if ($text =="จองห้อง"){
    $message = '{
- {
-  "type": "template",
-  "altText": "This is a buttons template",
-  "template": {
-      "type": "buttons",
-      "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
-      "imageAspectRatio": "rectangle",
-      "imageSize": "cover",
-      "imageBackgroundColor": "#FFFFFF",
-      "title": "Menu",
-      "text": "Please select",
-      "defaultAction": {
-          "type": "uri",
-          "label": "View detail",
-          "uri": "http://example.com/page/123"
-      },
-      "actions": [
-          {
-            "type": "uri",
-            "label": "View detail",
-            "uri": "http://example.com/page/123"
-          }
-      ]
-  }
+  "type": "button",
+  "action": {
+    "type": "uri",
+    "label": "Tap me",
+    "uri": "https://example.com"
+  },
+  "style": "primary",
+  "color": "#0000ff"
 }';
  }
 
